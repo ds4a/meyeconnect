@@ -1,0 +1,16 @@
+###See the documentation at www.ngrok.com/docs for all configuration options###
+
+authtoken: [YOUR NGROK AUTHORISATION TOKEN]
+region: eu
+update: true
+
+tunnels:
+  meyeconnect:
+    proto: http
+    addr: 80
+#    auth: "[USER]:[PASS]"
+
+##Create a tunnel for SSH access##
+#  meyessh:
+#    proto: tcp
+#    addr: 22
