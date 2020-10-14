@@ -47,6 +47,11 @@ https://s3.eu-central-1.wasabisys.com/ds4a-public/meyeconnect/latest/sendps.py
 4b16d3353aadd9323d771786c9aeb412
 500
 ")
+MEYEF8=("
+https://s3.eu-central-1.wasabisys.com/ds4a-public/meyeconnect/latest/connchk.py
+cddb52b1b58861a4a9017fcaef7154d8
+500
+")
 
 MEYEFILEARR=(
 [0]=$MEYEF0
@@ -57,6 +62,7 @@ MEYEFILEARR=(
 [5]=$MEYEF5
 [6]=$MEYEF6
 [7]=$MEYEF7
+[8]=$MEYEF8
 )
 
 ###MEYE INSTALLATION FUNCTIONS###
@@ -362,5 +368,10 @@ if ! grep -wq "/data/"$MEYE_PATH"connstart.sh >> /data/"$MEYE_PATH"meyeconnect.l
 else
  installevent_log "$MEYE_INSTXT""N - Update userinit.sh - Entry already exists!"
 fi
+
+######ADD NGROK CONNECTIVITY CHECK TO CRON SCHEDULE - CHECKS EVERY 10 MINUTES#######
+msg_bin_conf "Add connection checking to cron schedule? [Y/N]" "\nOK, skipping adding connection checking to cron schedule" "\n\nAdding cron schedule!" " - Add NGROK Connection Check Cron!" "1" "-sn1 -p "
+if [ "${msgresp^^}" = "Y" ];then crontab -l | { cat; echo "*/10 * * * *  /usr/bin/python /data/"$MEYE_PATH"connchk.py >/dev/null 2>&1"; } | crontab - ; fi
+
 msg_bin_conf "Reboot MotionEyeOS to complete setup and obtain endpoint? [Y/N]" "\n$TERMSETUP_TXT" "\n\nRebooting!" " - Confirm System Reboot!" "0" "-sn1 -p "
 if [ "${msgresp^^}" = "Y" ];then reboot; fi
