@@ -37,7 +37,7 @@ else:
         file.write('NOTIFICATION_MEYECONNECT: Y - NGROK Connection Failed - ' + str(conntestdatetime) + '\n')
         #Attempt to reinitialise a Ngrok tunnel.
         import subprocess
-        subprocess.call('./connstart.sh', shell=True)
+        subprocess.call(trupath+'/connstart.sh', shell=True)
         file.write('NOTIFICATION_MEYECONNECT: Y - NGROK Attempted Re-Initialisation - ' + str(conntestdatetime) + '\n')
 file.close()
 
