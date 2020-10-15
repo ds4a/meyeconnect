@@ -38,7 +38,7 @@ NGROK: You will require an account/plan with Ngrok and be able to obtain an Auth
 PUSHSAFER: If you want to receive push notifications with a link to your Ngrok public URL for your tunnel
 you will require a PushSafer account and be able to obtain an AuthToken from your account (you get 50 api call notifications included with a new account (as at the time of writing) and additional api calls can be purchased from 0.99 Euro for 1000 api calls)
 
-EMAIL: If you also want to receive email push notifications with a link to your Ngrok public URL for your tunnel
+EMAIL: If you also want to receive email notifications with a link to your Ngrok public URL for your tunnel
 you will require a working email account and know the account information such as email adrress, username, password, server port, server FQDN. 
 
 <b>INSTALLATION</b>
@@ -47,4 +47,5 @@ you will require a working email account and know the account information such a
 2.) #cd /data/   
 3.) # curl -O https://s3.eu-central-1.wasabisys.com/ds4a-public/meyeconnect/latest/install.sh   
 4.) # chmod 500 install.sh   
-5.) # ./install.sh   
+5.) # ./install.sh  
+6.) Follow and respond to the on-screen prompts  
