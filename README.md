@@ -35,7 +35,7 @@ other boards....
 NGROK: You will require an account/plan with Ngrok and be able to obtain an AuthToken from your account.
 (For most people the Free Ngrok account will be adequate)
 
-PUSHSAFER: If you want to receive push notifications with a link to your Ngrok public URL for your tunnel
+PUSHSAFER: If you want to receive push notifications direct to your mobile phone with a link to your Ngrok public URL for your tunnel
 you will require a PushSafer account and be able to obtain an AuthToken from your account (you get 50 api call notifications included with a new account (as at the time of writing) and additional api calls can be purchased from 0.99 Euro for 1000 api calls)
 
 EMAIL: If you also want to receive email notifications with a link to your Ngrok public URL for your tunnel
