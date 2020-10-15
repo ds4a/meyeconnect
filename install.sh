@@ -49,7 +49,7 @@ https://s3.eu-central-1.wasabisys.com/ds4a-public/meyeconnect/latest/sendps.py
 ")
 MEYEF8=("
 https://s3.eu-central-1.wasabisys.com/ds4a-public/meyeconnect/latest/connchk.py
-cddb52b1b58861a4a9017fcaef7154d8
+7d05aaffa2441493e620f08fbf8d6c6f
 500
 ")
 
