@@ -32,7 +32,7 @@ other boards....
 
 <b>INSTALLATION</b>
 
-1.) Login in to your Raspberry Pi (ssh admin@<YOUR_RPI_LOCALIP_ADDRESS>)
+1.) Login in to your Raspberry Pi (ssh admin@<YOUR_RPI_LOCALIP_ADDRESS>)<\br>
 2.) #cd /data/
 3.) # curl -O https://s3.eu-central-1.wasabisys.com/ds4a-public/meyeconnect/latest/install.sh
 4.) # chmod 500 install.sh
