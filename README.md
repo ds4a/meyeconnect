@@ -31,6 +31,7 @@ Raspberry Pi, but you're welcome to see what mileage you get with
 other boards....
 
 <b>PRE-INSTALLATION</b>
+
 NGROK: You will require an account/plan with Ngrok and be able to obtain an AuthToken from your account.
 (For most people the Free Ngrok account will be adequate)
 
